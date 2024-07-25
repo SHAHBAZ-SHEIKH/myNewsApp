@@ -1,0 +1,112 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.logo {
+    font-size: 24px;
+    color: #1C2833;
+}
+
+.logo span {
+    color: #FF5733;
+}
+
+.nav-link {
+    color: #FF5733 !important;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #FF5733;
+}
+
+.searchContent input {
+    padding: 6px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    outline: none;
+}
+
+#searchBtn {
+    padding: 6px;
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    width: 80px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#searchBtn:hover {
+    background-color: #fff;
+    color: #FF5733;
+    border: 1px solid #FF5733;
+}
+
+/* Card content styling */
+.cardContent {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.imgCard img {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cardPublish {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+/* Loader styling */
+.loader {
+    border: 16px solid #1f1f1f;
+    border-top: 16px solid #FF5733;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .imgCard img {
+        height: auto;
+    }
+}
